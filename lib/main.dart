@@ -25,6 +25,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int currentPageValue = 0;
+  String buttonText = 'SKIP';
   PageController pageController;
 
   @override
@@ -40,6 +41,15 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void getChangedPageAndMoveBar(int page) {
+    if (page == 2) {
+      setState(() {
+        buttonText = 'NEXT';
+      });
+    } else {
+      setState(() {
+        buttonText = 'SKIP';
+      });
+    }
     setState(() {
       currentPageValue = page;
     });
@@ -105,7 +115,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Expanded(
               flex: 1,
-              child: Text('SKIP'),
+              child: Text(buttonText),
             ),
           ],
         ),
