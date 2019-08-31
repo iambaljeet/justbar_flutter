@@ -1,6 +1,8 @@
 # justbar_flutter
 
-A new Flutter application.
+App onboarding build in Flutter
+
+![Screenshot](https://github.com/iambaljeet/justbar_flutter/blob/master/screenshots/app_screenshots.jpg)
 
 ## Getting Started
 
