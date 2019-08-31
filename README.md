@@ -1,4 +1,4 @@
-# justbar_flutter
+# onboarding_flutter
 
 App onboarding build in Flutter
 
